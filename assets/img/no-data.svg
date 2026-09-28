@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" width="260" height="180" role="img" aria-label="Nothing to show">
+  <title>Nothing to show</title>
+
+  <!--
+    Magnus empty state.
+    A stack of plywood sheets with the edge grain drawn in, and the red dot
+    from the Magnus mark sitting above it. Mid-grey strokes so the drawing
+    reads on both the light canvas and the dark one without a second asset.
+  -->
+
+  <defs>
+    <!-- edge grain: the hatching motif from the logo's mountain -->
+    <pattern id="mgGrain" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#c9ccd4" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse cx="130" cy="151" rx="66" ry="7" fill="#2a2c33" opacity="0.06"/>
+
+  <!-- sheet 3 (back) -->
+  <g opacity="0.55">
+    <path d="M78 104 L130 82 L182 104 L130 126 Z" fill="#ffffff" stroke="#c9ccd4" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M78 104 L130 126 L130 133 L78 111 Z" fill="url(#mgGrain)" stroke="#c9ccd4" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M182 104 L130 126 L130 133 L182 111 Z" fill="#eef0f3" stroke="#c9ccd4" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+
+  <!-- sheet 2 (middle) -->
+  <g opacity="0.8">
+    <path d="M78 88 L130 66 L182 88 L130 110 Z" fill="#ffffff" stroke="#b9bdc7" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M78 88 L130 110 L130 117 L78 95 Z" fill="url(#mgGrain)" stroke="#b9bdc7" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M182 88 L130 110 L130 117 L182 95 Z" fill="#eef0f3" stroke="#b9bdc7" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+
+  <!-- sheet 1 (front) -->
+  <g>
+    <path d="M78 72 L130 50 L182 72 L130 94 Z" fill="#ffffff" stroke="#a8abb6" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M78 72 L130 94 L130 101 L78 79 Z" fill="url(#mgGrain)" stroke="#a8abb6" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M182 72 L130 94 L130 101 L182 79 Z" fill="#eef0f3" stroke="#a8abb6" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+
+  <!-- the mark's red dot, hovering over the stack -->
+  <circle cx="130" cy="26" r="7" fill="#dd4d61"/>
+
+  <!-- two short rules suggesting the rows that are not there -->
+  <line x1="96" y1="41" x2="112" y2="41" stroke="#d4d6dd" stroke-width="2" stroke-linecap="round"/>
+  <line x1="148" y1="41" x2="164" y2="41" stroke="#d4d6dd" stroke-width="2" stroke-linecap="round"/>
+</svg>
